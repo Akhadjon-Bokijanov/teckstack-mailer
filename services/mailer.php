@@ -42,7 +42,7 @@ class Email
             //Recipients
             $this->mail->setFrom( $this->senderMail, $this->senderName);
             $this->mail->addAddress($this->receiverEmail, $this->receiverName);     // Add a recipient
-            $this->mail->addReplyTo('info@example.com', 'Information');
+            $this->mail->addReplyTo($this->replyTo, 'Support team');
 
 
             // Content
